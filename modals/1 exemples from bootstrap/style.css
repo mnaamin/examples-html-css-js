@@ -45,18 +45,20 @@ body {
 }
 
 .modaltile_and_close {
-  display: flex;
-  justify-content: space-between;
-}
-.modaltile_and_close p {
   font-weight: 400;
   font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.icon {
+.modaltile_and_close .icon {
+  display: flex;
   color: var(--close);
+  width: 18px;
 }
-.icon:hover {
-  color: #474b50;
+.icn:hover {
+  color: #b90000;
+  display: flex;
 }
 .btn a {
   color: var(--bg);
@@ -80,12 +82,6 @@ body {
 .Close:hover {
   background-color: var(--hoverC);
 }
-.icon:hover {
-  display: flex;
-  align-content: center;
-  border: 2px solid var(--hoverC);
-  border-radius: 10px;
-}
 @media (max-width: 768px) {
   html {
     font-size: 80%;
@@ -101,6 +97,6 @@ body {
 }
 @media (max-width: 450px) {
   html {
-    font-size: 10%;
+    font-size: 50%;
   }
 }
