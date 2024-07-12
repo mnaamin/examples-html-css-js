@@ -80,7 +80,12 @@ body {
 .Close:hover {
   background-color: var(--hoverC);
 }
-
+.icon:hover {
+  display: flex;
+  align-content: center;
+  border: 2px solid var(--hoverC);
+  border-radius: 10px;
+}
 @media (max-width: 768px) {
   html {
     font-size: 80%;
@@ -92,8 +97,6 @@ body {
   .main {
     padding: 15px;
     height: auto;
-  }
-  .icon {
   }
 }
 @media (max-width: 450px) {
