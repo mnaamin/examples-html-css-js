@@ -1,0 +1,72 @@
+:root {
+  --save: #0d6efd;
+  --hoverS: #0a53be;
+  --close: #6c757d;
+  --hoverC: #555c63;
+  --bg: #ffff;
+  --border: #dee2e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "poppins", sans-serif;
+  min-height: 2000px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #b8b8b8;
+  border-radius: 5px;
+  box-shadow: 0.5px 2px 7px #cfcfcf;
+}
+.boxone {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.boxtwo {
+  display: flex;
+  padding: 15px;
+  padding: 10px 20px;
+  justify-content: center;
+}
+
+a {
+  padding: 0 10px;
+  border: 2px solid var(--save);
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+  .container {
+    zoom: 1.5;
+    transition: 0.2s;
+  }
+  .main {
+    padding: 15px;
+    height: auto;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
