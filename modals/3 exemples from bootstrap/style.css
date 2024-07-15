@@ -38,19 +38,36 @@ body {
 }
 .boxone {
   text-align: center;
-  padding: 20px;
+  padding: 20px 40px;
   border-bottom: 1px solid var(--border);
 }
-.boxtwo {
-  display: flex;
-  padding: 15px;
-  padding: 10px 20px;
-  justify-content: center;
+.boxone span {
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
+.boxtwo {
+  display: flex;
+  justify-content: space-evenly;
+}
+.line {
+  border: 0.5px solid var(--border);
+}
+.yes,
+.no {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+}
+.yes a {
+  font-weight: 700;
+}
 a {
-  padding: 0 10px;
-  border: 2px solid var(--save);
+  color: var(--save);
+}
+a:hover {
+  color: var(--hoverS);
 }
 @media (max-width: 768px) {
   html {
@@ -60,9 +77,12 @@ a {
     zoom: 1.5;
     transition: 0.2s;
   }
-  .main {
-    padding: 15px;
-    height: auto;
+  .boxone {
+    padding: 5px;
+  }
+  .yes,
+  .no {
+    padding: 7px;
   }
 }
 @media (max-width: 450px) {
