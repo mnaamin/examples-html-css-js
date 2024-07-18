@@ -58,3 +58,6 @@ span {
 .btn:hover {
   background-color: var(--hover);
 }
+.icon:hover {
+  color: var(--hover);
+}
